@@ -20,25 +20,43 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
 
+  <script src="https://kit.fontawesome.com/8358802b49.js" crossorigin="anonymous"></script>
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
+<div class="site">
   <!-- Header Info -->
   <header>
     <!-- logo image here-->
-     <h1>Pignalosa Prints</h1>
+    <h1>Pignalosa Prints</h1>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#prints">Prints</a></li>
-        <li><a href="#customise">Custom Prints</a></li>
+        <li><a href="#customs">Custom Prints</a></li>
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <!-- selection of images here -->
+     <div class="slider-container">
+      <div class="slide">
+        <img src="images/IMG_1536 2.jpg" class="slide-image" alt="line drawing of couple on bench">
+        <h1>1</h1>
+      </div>
+      <div class="slide">
+        <h1>2</h1>
+      </div>
+      <div class="slide">
+        <h1>3</h1>
+      </div>
+      <div class="slide">
+        <img src="images/IMG_1537 2.jpg" class="slide-image" alt="Coloured drawing of couple on bench">
+        <h1>4</h1>
+      </div>
+     </div>
   </header>
 
   <!-- Main Site Info-->
@@ -47,37 +65,49 @@
       <div id="prints">
         <img class="main-image" src="images/IMG_1543 2.jpg" alt="Line Drawing of building, Coloured print of chef">
         <div class="prints-info">
-          <p>Custom digital prints; line work or in colour ranging from family photos to buildings and landscapes. </p>
+          <p><span>Custom digital prints;</span> line work or in colour ranging from family photos to buildings and landscapes. </p>
           <button>Organise Your Custom Print Here</button>
         </div>
       </div>
       <div class="gallery">
         <img class="gallery-img" src="images/IMG_1529 2.jpg" alt="Engaged Couple">
         <img class="gallery-img" src="images/IMG_1535 2.jpg" alt="Man and dog sleeping">
-        <img class="gallery-img" src="images/IMG_1542 2.jpg" alt="Cafe shopfront">
+        <img class="gallery-img" src="images/IMG_1533 2.jpg" alt="Cafe shopfront">
         <img class="gallery-img" src="images/IMG_1531 2.jpg" alt="Family portrait">
       </div>
-      <div>
-        <img src="images/IMG_1541 2.jpg" alt="Child eating a biscuit">
-        <img src="images/IMG_1533 2.jpg" alt="Group photo">
-        <img src="images/IMG_1534 2.jpg" alt="Man with pet cat">
+      <div class="gallery-2">
+        <img class="big-image" src="images/IMG_1541 2.jpg" alt="Child eating a biscuit">
+        <img class="big-image" src="images/IMG_1542 2.jpg" alt="Group photo">
+        <img class="big-image" src="images/IMG_1534 2.jpg" alt="Man with pet cat">
       </div>
-      <div id="customise">
-        <img src="images/IMG_1532 2.jpg" alt="Man with Child">
-        <p>custom prints, reach out</p>
-        <button>Enqure now!</button>
+      <div id="customs">
+        <img class="custom-img" src="images/IMG_1532 2.jpg" alt="Man with Child">
+        <div class="customs-info">
+          <p>custom prints, reach out</p>
+          <button>Enquire now!</button>
+        </div>
       </div>
       <div id="about-me">
-        <img src="images/IMG_1544.jpg" alt="Artisit Profile Photo">
-        <p>about me section </p>
+        <img class="artist-photo" src="images/IMG_1544.jpg" alt="Artisit Profile Photo">
+        <p class="about-me-info">about me section </p>
       </div>
     </div>
   </main>
-
+</div>
   <!-- Contact section -->
-   <footer>
-
-   </footer>
+  <footer>
+    <div class="instagram-logo">
+      <h3> Check out our Instagram</h3>
+      <p>
+        <a class="icon" href="https://www.instagram.com/pignalosaprints/" target="_blank" rel="noopener" alt="Instagram Icon">
+          <i class="fa-brands fa-instagram"></i>
+          </i>
+        </a>
+      </p>
+    </div>
+    <img class="instagram" src="images/IMG_1530 2.jpg" alt="Character line drawing">
+    <img class="instagram" src="images/IMG_1540 2.jpg" alt="Mum holding her baby">
+  </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
@@ -89,6 +119,8 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+
 </body>
+
 
 </html>

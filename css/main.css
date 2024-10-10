@@ -88,6 +88,7 @@ textarea {
    ========================================================================== */
 
 /**** General Styles ****/
+
 html {
   font-size: 1rem;
 }
@@ -109,14 +110,28 @@ h1 {
   color: #DFE1BE;
   display: flex;
   justify-content: space-around;
+  font-variant: small-caps;
+}
+
+.site {
+  width: 90%;
 }
 
 /**** Base Header/Footer styles ****/
+header {
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+}
 
 header nav ul {
-  width: 80%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  margin: 5px;
+  padding: 0;
+  justify-content: space-evenly;
+
+
 }
 
 nav {
@@ -129,47 +144,246 @@ ul {
 
 }
 
+li {
+  padding: 10px;
+}
+
 li,
 a {
   color: black;
   text-decoration: none;
   padding: 0;
+  font-variant: small-caps;
 }
 
 /******** Mobile Styles ********/
 /**** Prints Section ****/
 .main-image {
-  width: 45%;
-  padding: 5px;
+  width: 100%;
+  margin: 10px 20px;
+  box-sizing: border-box;
 }
 
 .prints-info {
-  width: 50%;
-  float: right;
-  padding: 10px 5px;
+  width: 100%;
+  margin: 10px 20px;
+  text-align: center;
 }
 
 /**** Gallery Section ****/
 .gallery {
-  display: grid;
-  gap: 50px 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .gallery-img {
-  width: 40%;
+  width: 45%;
+  height: 45%;
+  padding: 5px;
 }
 
-
-
-/**** All images ****/
-img {
-  width: 50%;
+/**** Gallery- big images ****/
+.gallery-2 {
+  padding: 10px;
 }
 
+.big-image {
+  width: 100%;
+  margin: 10px 20px;
+  box-sizing: border-box;
+}
 
+/**** Customs ****/
+.custom {
+  padding: 10px;
+}
 
+.custom-img {
+  width: 100%;
+  margin: 10px 20px;
+  box-sizing: border-box;
+}
 
+.customs-info {
+  text-align: center;
+}
 
+.customs-info p {
+  font-size: 2em;
+}
+
+/**** About Me ****/
+.artist-photo {
+  width: 100%;
+  margin: 10px 20px;
+  box-sizing: border-box;
+  border: solid white 20px;
+}
+
+.about-me-info {
+  text-align: center;
+}
+
+c
+
+/**** Footer ****/
+h3 {
+  padding-bottom: 0;
+}
+
+.instagram-logo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fa-brands,
+.fa-instagram {
+  font-size: 2em;
+  padding-left: 10px;
+}
+
+.instagram {
+  width: 100%;
+}
+
+/*---------- Media Queries for responsive design below ----------*/
+/*Tablet styles here*/
+@media only screen and (min-width: 768px) {
+  .site {
+    padding-left: 25px;
+  }
+
+  /**** Prints Section ****/
+  #prints {
+    display: flex;
+  }
+
+  .main-image {
+    width: 50%;
+  }
+
+  .prints-info {
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: 1.5em;
+    height: 50%;
+    margin-top: 150px;
+  }
+
+  /**** Gallery Section ****/
+  .gallery-img {
+    width: 20%;
+    padding: 40px 10px;
+  }
+
+  /**** Gallery- big images ****/
+  .big-image {
+    width: 33%;
+    margin: 0;
+  }
+
+  /**** Customs ****/
+  #customs {
+    display: flex;
+  }
+
+  .custom-img {
+    width: 50%;
+  }
+
+  .customs-info {
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: 1.5em;
+    height: 50%;
+    margin-top: 150px;
+  }
+
+  /**** About Me ****/
+  #about-me {
+    display: flex;
+  }
+
+  .artist-photo {
+    width: 50%;
+
+  }
+
+  .about-me-info {
+    flex-wrap: wrap;
+    width: 50%;
+    font-size: 1.5em;
+    height: 50%;
+    margin-top: 150px;
+  }
+
+  /**** Footer ****/
+  h3 {
+    width: 35%;
+    font-size: 1.8em;
+    text-align: left;
+  }
+
+  .fa-brands,
+  .fa-instagram {
+    font-size: 2.5em;
+    padding: 10px;
+  }
+
+}
+
+/*** ---------Desktop Styles --------***/
+@media only screen and (min-width: 1200px) {
+
+  /**** Prints Section ****/
+  .main-image {
+    width: 45%;
+  }
+
+  .prints-info {
+    margin-top: 250px;
+  }
+
+  /**** Gallery Section ****/
+  .gallery-img {
+    width: 23%;
+  }
+
+  /**** Gallery- big images ****/
+  .big-image {
+    padding: 20px;
+  }
+
+  /**** Customs ****/
+  .custom-img {
+    width: 45%;
+  }
+
+  /**** About Me ****/
+  .artist-photo {
+    width: 45%;
+
+  }
+
+  /**** Footer ****/
+  h3 {
+    width: 30%;
+    font-size: 2.5em;
+    text-align: left;
+  }
+
+  .fa-brands,
+  .fa-instagram {
+    font-size: 2.5em;
+    padding: 30px;
+  }
+
+  .instagram {
+    width: 50%;
+  }
+
+}
 
 /* ==========================================================================
    Helper classes
