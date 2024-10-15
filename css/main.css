@@ -158,8 +158,8 @@ a {
 
 /*** Image slider ***/
 .slider-container {
-  width: 90vw;
-  height: 80vh;
+  width: 85vw; 
+  height: 55vh;
   margin: 0 auto;
   max-width: 80rem;
   position: relative;
@@ -177,7 +177,10 @@ a {
 
 .slide-image {
   height: 100%;
-  object-fit: contain;
+  width: 100%;
+  object-fit: contain; 
+  /** height: 55vh;
+  width: 85vw; **/
 }
 
 /******** Mobile Styles ********/
