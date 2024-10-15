@@ -156,6 +156,30 @@ a {
   font-variant: small-caps;
 }
 
+/*** Image slider ***/
+.slider-container {
+  width: 90vw;
+  height: 80vh;
+  margin: 0 auto;
+  max-width: 80rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.25s ease-in-out;
+}
+
+.slide-image {
+  height: 100%;
+  object-fit: contain;
+}
+
 /******** Mobile Styles ********/
 /**** Prints Section ****/
 .main-image {
