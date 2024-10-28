@@ -43,3 +43,51 @@ function carousel() {
 }
 
 //prevBtn.style.display= "none";
+
+//footer imaage slider
+const slides2 = document.querySelectorAll('.slide-2');
+const nextBtn2 = document.querySelector('.next-btn2');
+const prevBtn2 = document.querySelector('.prev-btn2');
+
+slides2.forEach(function (slide2, index) {
+    slide2.style.left = `${index * 100}%`;
+});
+
+let counter2 = 0;
+
+nextBtn2.addEventListener('click', function () {
+    counter2++;
+    carousel2();
+});
+prevBtn2.addEventListener('click', function () {
+    counter2--;
+    carousel2();
+});
+
+function carousel2() {
+    //working with slides
+    // if (counter === slides.length){
+    //     counter= 0;
+    // }
+    // if (counter < 0){
+    //     counter= slides.length -1;
+    // }
+
+    //working with buttons
+    if (counter2 < slides2.length -1) {
+        nextBtn2.style.display= "block";
+    } else {
+        nextBtn2.style.display = "none";
+    }
+    if (counter2 > 0) {
+        prevBtn2.style.display= "block";
+    } else {
+        prevBtn2.style.display= "none";
+    }
+    slides2.forEach(function (slide2) {
+        slide2.style.transform = `translateX(-${counter2 * 100}%)`;
+    });
+}
+
+//prevBtn.style.display= "none";
+

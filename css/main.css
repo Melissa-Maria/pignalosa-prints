@@ -101,20 +101,18 @@ body {
   width: 100%;
 }
 
-.content-wrapper {
+.site {
   width: 100%;
 }
 
-h1 {
-  font-size: 3em;
-  color: #DFE1BE;
+.title {
   display: flex;
   justify-content: space-around;
-  font-variant: small-caps;
+  width: 100%;
 }
 
-.site {
-  width: 90%;
+.content-wrapper {
+  width: 100%;
 }
 
 /**** Base Header/Footer styles ****/
@@ -130,8 +128,6 @@ header nav ul {
   margin: 5px;
   padding: 0;
   justify-content: space-evenly;
-
-
 }
 
 nav {
@@ -158,8 +154,8 @@ a {
 
 /*** Image slider ***/
 .slider-container {
-  width: 85vw; 
-  height: 55vh;
+  width: 85vw;
+  height: 40vh;
   margin: 0 auto;
   max-width: 80rem;
   position: relative;
@@ -173,14 +169,38 @@ a {
   width: 100%;
   height: 100%;
   transition: all 0.25s ease-in-out;
+  padding: 10px 0;
 }
 
 .slide-image {
   height: 100%;
   width: 100%;
-  object-fit: contain; 
-  /** height: 55vh;
-  width: 85vw; **/
+  object-fit: contain;
+}
+
+/*** Image slider Footer***/
+.slider-container2 {
+  width: 85vw;
+  height: 50vh;
+  margin: 0 auto;
+  max-width: 80rem;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.slide-2 {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.25s ease-in-out;
+}
+
+.slide-image2 {
+  height: 85%;
+  width: 85%;
+  object-fit: contain;
 }
 
 /******** Mobile Styles ********/
@@ -202,12 +222,14 @@ a {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 25px;
+
 }
 
 .gallery-img {
-  width: 45%;
-  height: 45%;
-  padding: 5px;
+  width: 48%;
+  height: 48%;
+  padding: 2px;
 }
 
 /**** Gallery- big images ****/
@@ -234,6 +256,7 @@ a {
 
 .customs-info {
   text-align: center;
+  padding-left: 25px;
 }
 
 .customs-info p {
@@ -241,6 +264,10 @@ a {
 }
 
 /**** About Me ****/
+#about-me {
+  width: 100%;
+}
+
 .artist-photo {
   width: 100%;
   margin: 10px 20px;
@@ -249,10 +276,10 @@ a {
 }
 
 .about-me-info {
+  width: 100%;
   text-align: center;
+  padding: 0 20px;
 }
-
-c
 
 /**** Footer ****/
 h3 {
@@ -270,15 +297,29 @@ h3 {
   padding-left: 10px;
 }
 
-.instagram {
-  width: 100%;
-}
-
 /*---------- Media Queries for responsive design below ----------*/
 /*Tablet styles here*/
 @media only screen and (min-width: 768px) {
-  .site {
-    padding-left: 25px;
+
+  /*** Header Section ***/
+  header {
+    padding: 0;
+  }
+
+  .title {
+    width: 35%;
+    margin: auto;
+  }
+
+  nav {
+    width: 95%;
+    margin: auto;
+  }
+
+  /*** Image slider ***/
+  .slide-image {
+    height: 40vh;
+    width: 65vw;
   }
 
   /**** Prints Section ****/
@@ -287,7 +328,8 @@ h3 {
   }
 
   .main-image {
-    width: 50%;
+    width: 45%;
+    padding: 10px;
   }
 
   .prints-info {
@@ -295,24 +337,26 @@ h3 {
     width: 50%;
     font-size: 1.5em;
     height: 50%;
-    margin-top: 150px;
+    margin: auto;
   }
 
   /**** Gallery Section ****/
   .gallery-img {
-    width: 20%;
-    padding: 40px 10px;
+    width: 23%;
+    padding: 20px 5px;
   }
 
   /**** Gallery- big images ****/
   .big-image {
     width: 33%;
     margin: 0;
+    padding: 5px;
   }
 
   /**** Customs ****/
   #customs {
     display: flex;
+    padding-left: 20px;
   }
 
   .custom-img {
@@ -322,14 +366,15 @@ h3 {
   .customs-info {
     flex-wrap: wrap;
     width: 50%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     height: 50%;
-    margin-top: 150px;
+    margin: auto;
   }
 
   /**** About Me ****/
   #about-me {
     display: flex;
+    padding-left: 20px;
   }
 
   .artist-photo {
@@ -339,17 +384,18 @@ h3 {
 
   .about-me-info {
     flex-wrap: wrap;
-    width: 50%;
-    font-size: 1.5em;
-    height: 50%;
-    margin-top: 150px;
+    width: 40%;
+    font-size: 1.2em;
+    margin: auto;
+    padding: 0;
   }
 
   /**** Footer ****/
   h3 {
-    width: 35%;
+    width: 32%;
     font-size: 1.8em;
     text-align: left;
+    padding-left: 20px;
   }
 
   .fa-brands,
@@ -363,9 +409,31 @@ h3 {
 /*** ---------Desktop Styles --------***/
 @media only screen and (min-width: 1200px) {
 
+  /**** Header Section ****/
+  .title {
+    width: 20%;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  /*** Image slider ***/
+  .slider-container {
+    width: 70vw;
+    height: 75vh;
+    margin: 0 auto;
+    max-width: 80rem;
+  }
+
+  .slide-image {
+    width: 70vw;
+    height: 75vh;
+  }
+
   /**** Prints Section ****/
   .main-image {
-    width: 45%;
+    width: 35%;
   }
 
   .prints-info {
