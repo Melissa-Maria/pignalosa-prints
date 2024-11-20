@@ -131,8 +131,8 @@ header nav ul {
 }
 
 nav {
-  border-top: solid 1px #C4B7BB;
-  border-bottom: solid 1px #C4B7BB;
+  border-top: solid 1px #704227;;
+  border-bottom: solid 1px #704227;
 }
 
 ul {
@@ -146,61 +146,116 @@ li {
 
 li,
 a {
-  color: black;
+  color: #704227;
   text-decoration: none;
   padding: 0;
   font-variant: small-caps;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*** Image slider ***/
-.slider-container {
-  width: 85vw;
-  height: 40vh;
-  margin: 0 auto;
-  max-width: 80rem;
+.slider {
   position: relative;
+  width: 50%;
+  margin: auto;
   overflow: hidden;
+  padding: 20px;
 }
 
-.slide {
+.slider img {
+  width: 100%;
+  display: none;
+}
+
+img.displaySlide {
+  display: block;
+}
+
+.slider button {
   position: absolute;
-  display: grid;
-  place-items: center;
-  width: 100%;
-  height: 100%;
-  transition: all 0.25s ease-in-out;
-  padding: 10px 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  padding: 10px 15px;
+  background: none;
+  color: black;
+  border: none;
+  cursor: pointer;
 }
 
-.slide-image {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
+.prev {
+  left: 0;
 }
 
-/*** Image slider Footer***/
-.slider-container2 {
-  width: 85vw;
-  height: 50vh;
-  margin: 0 auto;
-  max-width: 80rem;
+.next {
+  right: 0;
+}
+
+/* Instagram Slider */
+.slider-wrap {
   position: relative;
-  /* overflow: hidden; */
-}
-
-.slide-2 {
-  position: absolute;
-  display: grid;
-  place-items: center;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  transition: all 0.25s ease-in-out;
+  height: 600px;
+  cursor: grab;
+  margin: 0;
 }
 
-.slide-image2 {
-  height: 85%;
-  width: 85%;
-  object-fit: contain;
+.insta-slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  overflow: scroll;
+  /* hides scroll bar in internet explorer, edge and firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hides scroll bar in chrome, safari and Opers */
+.insta-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-inner {
+  position: absolute;
+  display: flex;
+  justify-content:space-around;
+  top: 0;
+  left: 0;
+  height: 70%;
+  width: 1900px;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 70%;
+  top: 30%;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+}
+
+.prog-bar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: grey;
 }
 
 /******** Mobile Styles ********/
@@ -215,6 +270,11 @@ a {
   width: 100%;
   margin: 10px 20px;
   text-align: center;
+  color: #704227;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5em;
 }
 
 /**** Gallery Section ****/
@@ -257,6 +317,10 @@ a {
 .customs-info {
   text-align: center;
   padding-left: 25px;
+  color: #704227;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .customs-info p {
@@ -277,13 +341,26 @@ a {
 
 .about-me-info {
   width: 100%;
-  text-align: center;
+  text-align: justify;
   padding: 0 20px;
+  color: #704227;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+.span {
+  font-size: 1.5em;
 }
 
 /**** Footer ****/
 h3 {
   padding-bottom: 0;
+  color: #704227;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .instagram-logo {
@@ -295,6 +372,7 @@ h3 {
 .fa-instagram {
   font-size: 2em;
   padding-left: 10px;
+  color: #704227;
 }
 
 /*---------- Media Queries for responsive design below ----------*/
@@ -316,12 +394,7 @@ h3 {
     margin: auto;
   }
 
-  /*** Image slider ***/
-  .slide-image {
-    height: 40vh;
-    width: 65vw;
-  }
-
+  /** Image slider ***/
   /**** Prints Section ****/
   #prints {
     display: flex;
@@ -335,7 +408,7 @@ h3 {
   .prints-info {
     flex-wrap: wrap;
     width: 50%;
-    font-size: 1.5em;
+    font-size: 1.7em;
     height: 50%;
     margin: auto;
   }
@@ -366,7 +439,7 @@ h3 {
   .customs-info {
     flex-wrap: wrap;
     width: 50%;
-    font-size: 1.2em;
+    font-size: 1em;
     height: 50%;
     margin: auto;
   }
@@ -385,7 +458,7 @@ h3 {
   .about-me-info {
     flex-wrap: wrap;
     width: 40%;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: auto;
     padding: 0;
   }
@@ -419,7 +492,7 @@ h3 {
   }
 
   /*** Image slider ***/
-  .slider-container {
+  /* .slider-container {
     width: 70vw;
     height: 75vh;
     margin: 0 auto;
@@ -429,7 +502,7 @@ h3 {
   .slide-image {
     width: 70vw;
     height: 75vh;
-  }
+  } */
 
   /**** Prints Section ****/
   .main-image {
@@ -461,9 +534,13 @@ h3 {
 
   }
 
+  .about-me-info {
+    font-size: 1.5em;
+  }
+
   /**** Footer ****/
   h3 {
-    width: 30%;
+    width: 50%;
     font-size: 2.5em;
     text-align: left;
   }
@@ -471,11 +548,11 @@ h3 {
   .fa-brands,
   .fa-instagram {
     font-size: 2.5em;
-    padding: 30px;
+    padding-top: 30px; 
   }
 
-  .instagram {
-    width: 50%;
+  .instagram-logo {
+    width: 70%;
   }
 
 }
