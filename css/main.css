@@ -131,8 +131,8 @@ header nav ul {
 }
 
 nav {
-  border-top: solid 1px #704227;;
-  border-bottom: solid 1px #704227;
+  border-top: solid 1px #816043;
+  border-bottom: solid 1px #816043;
 }
 
 ul {
@@ -146,7 +146,7 @@ li {
 
 li,
 a {
-  color: #704227;
+  color: #816043;
   text-decoration: none;
   padding: 0;
   font-variant: small-caps;
@@ -158,7 +158,7 @@ a {
 /*** Image slider ***/
 .slider {
   position: relative;
-  width: 50%;
+  width: 90%;
   margin: auto;
   overflow: hidden;
   padding: 20px;
@@ -224,7 +224,7 @@ img.displaySlide {
 .slider-inner {
   position: absolute;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   top: 0;
   left: 0;
   height: 70%;
@@ -261,20 +261,41 @@ img.displaySlide {
 /******** Mobile Styles ********/
 /**** Prints Section ****/
 .main-image {
-  width: 100%;
-  margin: 10px 20px;
+  width: 95%;
+  margin: 20px 30px 0 30px;
   box-sizing: border-box;
 }
 
 .prints-info {
   width: 100%;
-  margin: 10px 20px;
+  margin: 0 20px 20px 20px;
   text-align: center;
-  color: #704227;
+  color: #816043;
   font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+
+.button,
+.button2 {
+  color: #816043;
+  border: solid 2px #6a775b;
+  padding: 1em;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #bac38f;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.button {
+  font-size: 1em;
+}
+
+.button:hover {
+  transform: scale(0.96);
 }
 
 /**** Gallery Section ****/
@@ -304,10 +325,6 @@ img.displaySlide {
 }
 
 /**** Customs ****/
-.custom {
-  padding: 10px;
-}
-
 .custom-img {
   width: 100%;
   margin: 10px 20px;
@@ -315,16 +332,19 @@ img.displaySlide {
 }
 
 .customs-info {
+  width: 100%;
   text-align: center;
-  padding-left: 25px;
-  color: #704227;
+  margin: 10px 20px;
+  justify-content: center;
+  color: #816043;
   font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
+  font-size: 1em;
 }
 
 .customs-info p {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 /**** About Me ****/
@@ -343,7 +363,7 @@ img.displaySlide {
   width: 100%;
   text-align: justify;
   padding: 0 20px;
-  color: #704227;
+  color: #816043;
   font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
@@ -357,7 +377,7 @@ img.displaySlide {
 /**** Footer ****/
 h3 {
   padding-bottom: 0;
-  color: #704227;
+  color: #816043;
   font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
@@ -372,7 +392,13 @@ h3 {
 .fa-instagram {
   font-size: 2em;
   padding-left: 10px;
-  color: #704227;
+  color: #816043;
+  transition: transform 0.2s ease;
+}
+
+.fa-brands:active,
+.fa-instagram:hover {
+  transform: scale(1.2);
 }
 
 /*---------- Media Queries for responsive design below ----------*/
@@ -394,7 +420,10 @@ h3 {
     margin: auto;
   }
 
-  /** Image slider ***/
+.slider {
+  width: 55%;
+}
+
   /**** Prints Section ****/
   #prints {
     display: flex;
@@ -411,6 +440,11 @@ h3 {
     font-size: 1.7em;
     height: 50%;
     margin: auto;
+  }
+
+  .button {
+    font-size: 0.9em;
+    padding: 0.5em; 
   }
 
   /**** Gallery Section ****/
@@ -440,9 +474,14 @@ h3 {
     flex-wrap: wrap;
     width: 50%;
     font-size: 1em;
-    height: 50%;
-    margin: auto;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
   }
+
+.button2 {
+  font-size: 1.2em;
+}
 
   /**** About Me ****/
   #about-me {
@@ -452,15 +491,13 @@ h3 {
 
   .artist-photo {
     width: 50%;
-
   }
 
   .about-me-info {
     flex-wrap: wrap;
     width: 40%;
     font-size: 1.1em;
-    margin: auto;
-    padding: 0;
+    padding: 30px 20px;;
   }
 
   /**** Footer ****/
@@ -491,6 +528,9 @@ h3 {
     width: 90%;
   }
 
+  .slider {
+    width: 45%;
+  }
   /*** Image slider ***/
   /* .slider-container {
     width: 70vw;
@@ -528,6 +568,10 @@ h3 {
     width: 45%;
   }
 
+  .customs-info {
+    padding-top: 50px;
+  }
+
   /**** About Me ****/
   .artist-photo {
     width: 45%;
@@ -548,7 +592,7 @@ h3 {
   .fa-brands,
   .fa-instagram {
     font-size: 2.5em;
-    padding-top: 30px; 
+    padding-top: 30px;
   }
 
   .instagram-logo {
