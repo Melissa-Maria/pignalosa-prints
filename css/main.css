@@ -164,6 +164,12 @@ a {
   padding: 20px;
 }
 
+.coupleSlide {
+  padding-top: 37px;
+  padding-bottom: 37px;
+
+}
+
 .slider img {
   width: 100%;
   display: none;
@@ -208,7 +214,7 @@ img.displaySlide {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 90%;
+  height: 100%;
   width: 100%;
   overflow: scroll;
   /* hides scroll bar in internet explorer, edge and firefox */
@@ -294,7 +300,8 @@ img.displaySlide {
   font-size: 1em;
 }
 
-.button:hover {
+.button:hover,
+.button2:hover {
   transform: scale(0.96);
 }
 
@@ -374,6 +381,38 @@ img.displaySlide {
   font-size: 1.5em;
 }
 
+/**** Contact ****/
+#contact {
+  width: 90%;
+  justify-content: center;
+  border-top: solid 1px #816043;
+  border-bottom: solid 1px #816043;
+  margin: 20px;
+  padding: 15px;
+}
+
+#contact .contact-icons ul {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.contact-info {
+  text-align: center;
+  color: #816043;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+.contact-email {
+  text-align: center;
+  font-size: 1.5em;
+}
+
 /**** Footer ****/
 h3 {
   padding-bottom: 0;
@@ -420,9 +459,14 @@ h3 {
     margin: auto;
   }
 
-.slider {
-  width: 55%;
-}
+  .slider {
+    width: 55%;
+  }
+
+  .coupleSlide {
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
 
   /**** Prints Section ****/
   #prints {
@@ -444,7 +488,7 @@ h3 {
 
   .button {
     font-size: 0.9em;
-    padding: 0.5em; 
+    padding: 0.5em;
   }
 
   /**** Gallery Section ****/
@@ -479,9 +523,9 @@ h3 {
     align-items: center;
   }
 
-.button2 {
-  font-size: 1.2em;
-}
+  .button2 {
+    font-size: 1.2em;
+  }
 
   /**** About Me ****/
   #about-me {
@@ -497,12 +541,35 @@ h3 {
     flex-wrap: wrap;
     width: 40%;
     font-size: 1.1em;
-    padding: 30px 20px;;
+    padding: 30px 20px;
+    ;
+  }
+
+  /**** Contact ****/
+  #contact {
+    margin: 30px;
+  }
+
+  .contact-info {
+    font-size: 1.5em;
+  }
+
+  #contact .contact-icons ul {
+    margin: 0 20px; 
+    justify-content: center;
+  }
+
+.contact-icons ul li {
+  padding: 0 20px;
+}
+
+  .email {
+    font-size: 1.5em;
   }
 
   /**** Footer ****/
   h3 {
-    width: 32%;
+    width: 28%;
     font-size: 1.8em;
     text-align: left;
     padding-left: 20px;
@@ -511,7 +578,7 @@ h3 {
   .fa-brands,
   .fa-instagram {
     font-size: 2.5em;
-    padding: 10px;
+    padding-top: 10px;
   }
 
 }
@@ -531,6 +598,7 @@ h3 {
   .slider {
     width: 45%;
   }
+
   /*** Image slider ***/
   /* .slider-container {
     width: 70vw;
@@ -584,7 +652,7 @@ h3 {
 
   /**** Footer ****/
   h3 {
-    width: 50%;
+    width: 39%;
     font-size: 2.5em;
     text-align: left;
   }
@@ -592,7 +660,7 @@ h3 {
   .fa-brands,
   .fa-instagram {
     font-size: 2.5em;
-    padding-top: 30px;
+    padding-top: 25px;
   }
 
   .instagram-logo {
