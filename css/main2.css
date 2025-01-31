@@ -88,38 +88,29 @@ textarea {
    ========================================================================== */
 
 /**** General Styles ****/
-
-html {
-  font-size: 1rem; 
-}
-
 body {
   font-size: 1em;
-  text-align: left;
+  /* text-align: left; */
   color: black;
   background-color: #FFF5ED;
   width: 100%;
 }
 
-main {
-  width: 100%;
-}
-
-.site {
-  width: 100%;
+/******** Mobile Styles ********/
+/**** Nav/Header ****/
+.container1 {
+ /* border: solid 2px red; */
+  display: flex;
+  justify-content: center;
 }
 
 .title {
- /* display: flex;
-  justify-content: space-around; */
-  width: 100%;
-} 
+   width: 80%;
+ } 
 
-.content-wrapper {
-  width: 100%;
-}
-
-/**** Base Header/Footer styles ****/
+ .flex-nav {
+  /*border: solid 2px blue; */
+ }
 
 .flex-nav ul {
   border-top: solid 1px #816043;
@@ -128,7 +119,8 @@ main {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .flex-nav li {
@@ -146,21 +138,26 @@ a {
 
 /*** Image slider ***/
 .slider {
-  position: relative;
+  /*position: relative; */
   width: 90%;
-  margin: auto;
+ /* margin: auto; */
   overflow: hidden;
-  padding: 20px;
+  /*padding: 20px; */
+} 
+
+ .coupleSlide {
+  /*padding-top: 37px;
+  padding-bottom: 37px; */
+  width: 30%;
 }
 
-.coupleSlide {
-  padding-top: 37px;
-  padding-bottom: 37px;
-
+.slide .display-slide,
+.slide {
+  width: 80%;
 }
 
 .slider img {
-  width: 100%;
+  width: 80%;
   display: none;
 }
 
@@ -169,11 +166,11 @@ img.displaySlide {
 }
 
 .slider button {
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   background: none;
   color: black;
   border: none;
@@ -188,7 +185,207 @@ img.displaySlide {
   right: 0;
 }
 
+/**** Prints Section ****/
+.container2 {
+  /* border: solid 2px green; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-image {
+  width: 80%;
+}
+
+.prints-info {
+  width: 90%;
+  text-align: center;
+  color: #816043;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+} 
+
+.button,
+.button2 {
+  color: #816043;
+  border: solid 2px #6a775b;
+  padding: 0.5em;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #bac38f;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+  font-variant: small-caps;
+}
+
+.button {
+  font-size: 1em;
+}
+
+.button:hover,
+.button2:hover {
+  transform: scale(0.96);
+}
+
+/**** Gallery Section ****/
+.container3 {
+  /* border: solid 2px orange; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-img {
+  width: 40%;
+  padding: 2px;
+}
+
+/**** Gallery- big images ****/
+.container4 {
+  /* border: solid 2px purple; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.big-image {
+  width: 85%;
+  padding: 2px;
+}
+
+/**** Customs ****/
+.container5 {
+ /*  border: solid 2px red; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.custom-img {
+  width: 85%;
+  padding: 2px;
+} 
+
+.customs-info {
+  width: 90%;
+  text-align: center;
+  color: #816043;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+/**** About Me ****/
+.container6 {
+ /*  border: solid 2px black; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 85%;
+  border: solid white 20px;
+}
+
+.info {
+  text-align: justify;
+  padding: 0 20px;
+  color: #816043;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.span {
+  font-size: 1.2em;
+}
+
+/**** Contact ****/
+.container7 {
+  /* border:solid 2px red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-info {
+  text-align: center;
+  color: #816043;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+.container8 ul{
+  /* border: solid 2px yellowgreen; */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container8 li {
+  font-size: 1.5em;
+  text-align: center;
+  flex-basis: 100%; /* WHY WONT THEY SPREAD EVEN?!?! */
+}
+
+.container8 .social-icon {
+  padding: 5px;
+  flex:1;
+}
+
+.container8 .email {
+  padding-bottom: 5px;
+}
+
+/**** Footer ****/
+.container9 {
+ /* border: solid 2px orangered; */
+  display: flex;
+  align-items: baseline;
+}
+
+.container9 h3 {
+  margin: 0;
+  flex: 2;
+}
+
+.icon {
+  margin:  0;
+  font-size: 1.5em;
+  flex-basis: 45%;
+}
+
+.fa-brands,
+.fa-instagram {
+  font-size: 2em;
+  padding-left: 10px;
+  color: #816043;
+  transition: transform 0.2s ease;
+}
+
+.fa-brands:active,
+.fa-instagram:hover {
+  transform: scale(1.2);
+}
+
 /* Instagram Slider */
+.container10 {
+  border: solid 2px purple;
+}
+.item img {
+  width: 100%;
+}
+
 .slider-wrap {
   position: relative;
   top: 0;
@@ -234,7 +431,7 @@ img.displaySlide {
   justify-content: center;
   width: 250px;
   height: 70%;
-  top: 30%;
+  top: 0;
 }
 
 .progress-bar {
@@ -254,192 +451,12 @@ img.displaySlide {
   background-color: grey;
 }
 
-/******** Mobile Styles ********/
-/**** Prints Section ****/
-.main-image {
-  width: 90%;
-  margin: 10px 30px 0 40px; 
-  box-sizing: border-box;
-}
-
-.prints-info {
-  width: 100%;
-  margin: 0 20px 20px 20px;
-  text-align: center;
-  color: #816043;
-  font-family: "Handlee", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.2em;
-}
-
-.button,
-.button2 {
-  color: #816043;
-  border: solid 2px #6a775b;
-  padding: 1em;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: #bac38f;
-  font-weight: bold;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease;
-  font-variant: small-caps;
-}
-
-.button {
-  font-size: 1em;
-}
-
-.button:hover,
-.button2:hover {
-  transform: scale(0.96);
-}
-
-/**** Gallery Section ****/
-.gallery {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 25px;
-
-}
-
-.gallery-img {
-  width: 48%;
-  height: 48%;
-  padding: 2px;
-}
-
-/**** Gallery- big images ****/
-.gallery-2 {
-  padding: 10px;
-}
-
-.big-image {
-  width: 100%;
-  margin: 10px 20px;
-  box-sizing: border-box;
-}
-
-/**** Customs ****/
-.custom-img {
-  width: 100%;
-  margin: 10px 20px;
-  box-sizing: border-box;
-}
-
-.customs-info {
-  width: 100%;
-  text-align: center;
-  margin: 10px 20px;
-  justify-content: center;
-  color: #816043;
-  font-family: "Handlee", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1em;
-}
-
-.customs-info p {
-  font-size: 1.8em;
-}
-
-/**** About Me ****/
-#about-me {
-  width: 100%;
-}
-
-.artist-photo {
-  width: 100%;
-  margin: 10px 20px;
-  box-sizing: border-box;
-  border: solid white 20px;
-}
-
-.about-me-info {
-  width: 100%; 
-  text-align: justify;
-  padding: 0 20px;
-  color: #816043;
-  font-family: "Handlee", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.2em;
-}
-
-.span {
-  font-size: 1.5em;
-}
-
-/**** Contact ****/
-#contact {
-  width: 95%;
-  justify-content: center;
-  border-top: solid 1px #816043;
-  border-bottom: solid 1px #816043;
-}
-
-#contact .contact-icons ul {
-  width: 100%;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: space-evenly;
-}
-
-.contact-info {
-  text-align: center;
-  color: #816043;
-  font-family: "Handlee", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.2em;
-}
-
-.contact-email {
-  text-align: center;
-  font-size: 1.5em;
-}
-
-/**** Footer ****/
-
-footer {
-  width: 100%;
-}
-
-h3 {
-  padding-bottom: 0;
-  color: #816043;
-  font-family: "Handlee", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.instagram-logo {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.fa-brands,
-.fa-instagram {
-  font-size: 2em;
-  padding-left: 10px;
-  color: #816043;
-  transition: transform 0.2s ease;
-}
-
-.fa-brands:active,
-.fa-instagram:hover {
-  transform: scale(1.2);
-}
-
 /*---------- Media Queries for responsive design below ----------*/
 /*Tablet styles here*/
-@media only screen and (min-width: 768px) {
+/*@media only screen and (min-width: 768px) {
 
   /*** Header Section ***/
-  header {
+  /*header {
     padding: 0;
   }
 
@@ -453,7 +470,7 @@ h3 {
     margin: auto;
   } */
 
-  .flex-nav li {
+  /*.flex-nav li {
     font-variant: small-caps;
     font-family: "Handlee", cursive;
     font-weight: 400;
@@ -471,7 +488,7 @@ h3 {
   }
 
   /**** Prints Section ****/
-  #prints {
+  /*#prints {
     display: flex;
   }
 
@@ -494,20 +511,20 @@ h3 {
   }
 
   /**** Gallery Section ****/
-  .gallery-img {
+  /*.gallery-img {
     width: 23%;
     padding: 20px 5px;
   }
 
   /**** Gallery- big images ****/
-  .big-image {
+  /*.big-image {
     width: 33%;
     margin: 0;
     padding: 5px;
   }
 
   /**** Customs ****/
-  #customs {
+  /*#customs {
     display: flex;
     padding-left: 20px;
   }
@@ -530,7 +547,7 @@ h3 {
   }
 
   /**** About Me ****/
-  #about-me {
+  /*#about-me {
     display: flex;
     padding-left: 20px;
   }
@@ -548,7 +565,7 @@ h3 {
   }
 
   /**** Contact ****/
-  #contact {
+  /*#contact {
     margin: 30px;
   }
 
@@ -570,7 +587,7 @@ h3 {
   }
 
   /**** Footer ****/
-  h3 {
+  /*h3 {
     width: 28%;
     font-size: 1.8em;
     text-align: left;
@@ -586,10 +603,10 @@ h3 {
 }
 
 /*** ---------Desktop Styles --------***/
-@media only screen and (min-width: 1200px) {
+/*@media only screen and (min-width: 1200px) {
 
   /**** Header Section ****/
-  .title {
+  /*.title {
     width: 20%;
   }
 
@@ -615,7 +632,7 @@ h3 {
   } */
 
   /**** Prints Section ****/
-  .main-image {
+  /*.main-image {
     width: 35%;
   }
 
@@ -624,17 +641,17 @@ h3 {
   }
 
   /**** Gallery Section ****/
-  .gallery-img {
+  /*.gallery-img {
     width: 23%;
   }
 
   /**** Gallery- big images ****/
-  .big-image {
+  /*.big-image {
     padding: 20px;
   }
 
   /**** Customs ****/
-  .custom-img {
+  /*.custom-img {
     width: 45%;
   }
 
@@ -643,7 +660,7 @@ h3 {
   }
 
   /**** About Me ****/
-  .artist-photo {
+  /*.artist-photo {
     width: 45%;
 
   }
@@ -653,7 +670,7 @@ h3 {
   }
 
   /**** Footer ****/
-  h3 {
+  /*h3 {
     width: 39%;
     font-size: 2.5em;
     text-align: left;
