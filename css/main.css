@@ -88,55 +88,51 @@ textarea {
    ========================================================================== */
 
 /**** General Styles ****/
-
-html {
-  font-size: 1rem; 
-}
-
 body {
   font-size: 1em;
-  text-align: left;
   color: black;
   background-color: #FFF5ED;
   width: 100%;
 }
 
-main {
-  width: 100%;
-}
-
-.site {
-  width: 100%;
+/******** Mobile Styles ********/
+/**** Nav/Header ****/
+.container1 {
+  display: flex;
+  justify-content: center;
 }
 
 .title {
- /* display: flex;
-  justify-content: space-around; */
-  width: 100%;
-} 
-
-.content-wrapper {
-  width: 100%;
+  width: 65%;
 }
 
-/**** Base Header/Footer styles ****/
+.flex-nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
 
 .flex-nav ul {
   border-top: solid 1px #816043;
   border-bottom: solid 1px #816043;
+  width: 90%;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 5px;
+
+
+
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .flex-nav li {
   font-variant: small-caps;
   font-family: "Handlee", cursive;
   font-weight: 400;
-  font-style: normal; 
-  flex-basis: 100%;
+  font-style: normal;
+  padding: 5px;
 }
 
 a {
@@ -146,21 +142,26 @@ a {
 
 /*** Image slider ***/
 .slider {
-  position: relative;
+  /*position: relative; */
   width: 90%;
-  margin: auto;
+  /* margin: auto; */
   overflow: hidden;
-  padding: 20px;
+  /*padding: 20px; */
 }
 
 .coupleSlide {
-  padding-top: 37px;
-  padding-bottom: 37px;
+  /*padding-top: 37px;
+  padding-bottom: 37px; */
+  width: 30%;
+}
 
+.slide .display-slide,
+.slide {
+  width: 80%;
 }
 
 .slider img {
-  width: 100%;
+  width: 80%;
   display: none;
 }
 
@@ -169,11 +170,11 @@ img.displaySlide {
 }
 
 .slider button {
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   background: none;
   color: black;
   border: none;
@@ -188,7 +189,228 @@ img.displaySlide {
   right: 0;
 }
 
+/**** Prints Section ****/
+.container2 {
+  /* border: solid 2px green; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main-image {
+  width: 70%;
+}
+
+.prints-info {
+  text-align: center;
+  color: #816043;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 0 10px;
+}
+
+.button,
+.button2 {
+  color: #816043;
+  border: solid 2px #6a775b;
+  padding: 0.5em;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #bac38f;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+  font-variant: small-caps;
+}
+
+.button {
+  font-size: 1em;
+}
+
+.button:hover,
+.button2:hover {
+  transform: scale(0.96);
+}
+
+/**** Gallery Section ****/
+.container3 {
+  padding: 20px 0;
+  /* border: solid 2px orange; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-img {
+  width: 50%;
+  padding: 5px 10px;
+  flex: 1;
+}
+
+/**** Gallery- big images ****/
+.container4 {
+  /* border: solid 2px purple; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.big-image {
+  width: 85%;
+  padding: 5px 10px;
+
+}
+
+/**** Customs ****/
+.container5 {
+  padding: 20px 0;
+  /*  border: solid 2px red; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.custom-img {
+  width: 90%;
+  padding: 2px;
+}
+
+.customs-info {
+  width: 90%;
+  text-align: center;
+  color: #816043;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+/**** About Me ****/
+.container6 {
+  /*  border: solid 2px black; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 85%;
+  border: solid white 20px;
+}
+
+.info {
+  text-align: justify;
+  padding: 0 20px;
+  color: #816043;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+}
+
+.span {
+  font-size: 1.2em;
+  color: #74563e;
+}
+
+/**** Contact ****/
+#contact {
+  border-top: solid 1px #816043;
+  border-bottom: solid 1px #816043;
+}
+
+.container7 {
+
+  /* border:solid 2px red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-info {
+  text-align: center;
+  color: #74563e;
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+.container8 ul {
+  /* border: solid 2px yellowgreen; */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container8 li {
+  font-size: 1.5em;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+.container8 .social-icon {
+  font-size: 1em;
+  padding: 5px;
+  flex: 1;
+}
+
+.container8 .email {
+  padding: 10px 0;
+}
+
+/**** Footer ****/
+.container9 {
+  /* border: solid 2px orangered; */
+  display: flex;
+  align-items: baseline;
+  padding-top: 30px;
+  ;
+}
+
+.container9 h3 {
+  font-family: "Handlee", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #816043;
+  margin: 0;
+  flex: 1;
+}
+
+.icon {
+  margin: 0;
+  font-size: 1em;
+  flex-basis: 55%;
+}
+
+.fa-brands,
+.fa-instagram {
+  font-size: 2em;
+  padding-left: 10px;
+  color: #816043;
+  transition: transform 0.2s ease;
+}
+
+.fa-brands:active,
+.fa-instagram:hover {
+  transform: scale(1.2);
+}
+
 /* Instagram Slider */
+.container10 {
+  border: solid 2px purple;
+}
+
+.item img {
+  width: 100%;
+}
+
 .slider-wrap {
   position: relative;
   top: 0;
@@ -234,7 +456,7 @@ img.displaySlide {
   justify-content: center;
   width: 250px;
   height: 70%;
-  top: 30%;
+  top: 0;
 }
 
 .progress-bar {
@@ -254,211 +476,18 @@ img.displaySlide {
   background-color: grey;
 }
 
-/******** Mobile Styles ********/
-/**** Prints Section ****/
-.main-image {
-  width: 90%;
-  margin: 10px 30px 0 40px; 
-  box-sizing: border-box;
-}
-
-.prints-info {
-  width: 100%;
-  margin: 0 20px 20px 20px;
-  text-align: center;
-  color: #816043;
-  font-family: "Handlee", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.2em;
-}
-
-.button,
-.button2 {
-  color: #816043;
-  border: solid 2px #6a775b;
-  padding: 1em;
-  border-radius: 50px;
-  cursor: pointer;
-  background-color: #bac38f;
-  font-weight: bold;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.2s ease;
-  font-variant: small-caps;
-}
-
-.button {
-  font-size: 1em;
-}
-
-.button:hover,
-.button2:hover {
-  transform: scale(0.96);
-}
-
-/**** Gallery Section ****/
-.gallery {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 25px;
-
-}
-
-.gallery-img {
-  width: 48%;
-  height: 48%;
-  padding: 2px;
-}
-
-/**** Gallery- big images ****/
-.gallery-2 {
-  padding: 10px;
-}
-
-.big-image {
-  width: 100%;
-  margin: 10px 20px;
-  box-sizing: border-box;
-}
-
-/**** Customs ****/
-.custom-img {
-  width: 100%;
-  margin: 10px 20px;
-  box-sizing: border-box;
-}
-
-.customs-info {
-  width: 100%;
-  text-align: center;
-  margin: 10px 20px;
-  justify-content: center;
-  color: #816043;
-  font-family: "Handlee", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1em;
-}
-
-.customs-info p {
-  font-size: 1.8em;
-}
-
-/**** About Me ****/
-#about-me {
-  width: 100%;
-}
-
-.artist-photo {
-  width: 100%;
-  margin: 10px 20px;
-  box-sizing: border-box;
-  border: solid white 20px;
-}
-
-.about-me-info {
-  width: 100%; 
-  text-align: justify;
-  padding: 0 20px;
-  color: #816043;
-  font-family: "Handlee", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.2em;
-}
-
-.span {
-  font-size: 1.5em;
-}
-
-/**** Contact ****/
-#contact {
-  width: 95%;
-  justify-content: center;
-  border-top: solid 1px #816043;
-  border-bottom: solid 1px #816043;
-}
-
-#contact .contact-icons ul {
-  width: 100%;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: space-evenly;
-}
-
-.contact-info {
-  text-align: center;
-  color: #816043;
-  font-family: "Handlee", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.2em;
-}
-
-.contact-email {
-  text-align: center;
-  font-size: 1.5em;
-}
-
-/**** Footer ****/
-
-footer {
-  width: 100%;
-}
-
-h3 {
-  padding-bottom: 0;
-  color: #816043;
-  font-family: "Handlee", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.instagram-logo {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.fa-brands,
-.fa-instagram {
-  font-size: 2em;
-  padding-left: 10px;
-  color: #816043;
-  transition: transform 0.2s ease;
-}
-
-.fa-brands:active,
-.fa-instagram:hover {
-  transform: scale(1.2);
-}
-
 /*---------- Media Queries for responsive design below ----------*/
-/*Tablet styles here*/
+/* Tablet styles here */
 @media only screen and (min-width: 768px) {
 
-  /*** Header Section ***/
-  header {
-    padding: 0;
-  }
-
+  /**** Nav/Header ****/
   .title {
-    width: 35%;
-    margin: auto;
-  }
+    width: 40%;
 
-  /*nav {
-    width: 95%;
-    margin: auto;
-  } */
+  }
 
   .flex-nav li {
-    font-variant: small-caps;
-    font-family: "Handlee", cursive;
-    font-weight: 400;
-    font-style: normal; 
-    flex-basis: 1 1 50%;
+    font-size: 1.2em;
   }
 
   .slider {
@@ -471,205 +500,182 @@ h3 {
   }
 
   /**** Prints Section ****/
-  #prints {
-    display: flex;
+  .container2 {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .container2>* {
+    flex: 1;
   }
 
   .main-image {
-    width: 45%;
-    padding: 10px;
+    width: 70%;
   }
 
   .prints-info {
-    flex-wrap: wrap;
-    width: 50%;
-    font-size: 1.7em;
-    height: 50%;
-    margin: auto;
-  }
-
-  .button {
-    font-size: 0.9em;
-    padding: 0.5em;
+    font-size: 1.4em;
   }
 
   /**** Gallery Section ****/
   .gallery-img {
-    width: 23%;
-    padding: 20px 5px;
+    width: 20%;
+    padding: 5px;
   }
 
   /**** Gallery- big images ****/
+  /* NEED TO SPACE EVENLY FLEX MAYBE?? */
+  .container4 {
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .big-image {
-    width: 33%;
-    margin: 0;
+    width: 30%;
+    flex: 1;
+  }
+
+  .pets {
+   
+    flex: 2;
+  }
+
+  /**** Customs ****/
+  .container5 {
+    align-items: center;
+  }
+
+  .container5>* {
+    flex: 1;
+  }
+
+  .custom-img {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .customs-info {
+    padding: 0 20px;
+  }
+
+  /**** About Me ****/
+  .container6 {
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .container6>* {
+    flex: 1;
+  }
+
+  .photo {
+    width: 40%;
+    margin-left: 10px;
+
+  }
+
+  .info {
+    font-size: 1.2em;
+  }
+
+  /**** Contact ****/
+  .container8 ul {
+    justify-content: center;
+  }
+
+  .container8 .social-icon {
+    flex: 2;
+  }
+
+  .container8 .email {
+    flex: 3;
+  }
+
+  /**** Footer ****/
+  .container9 {
+    display: flex;
+    align-items: baseline;
+    padding-top: 30px;
+
+  }
+
+  .container9 h3 {
+    font-size: 1.5em;
+    flex: 1;
+  }
+
+  .icon {
+    flex-basis: 75%;
+  }
+
+}
+
+/*---------- Media Queries for responsive design below ----------*/
+/* Tablet styles here */
+@media only screen and (min-width: 1200px) {
+
+  /**** Nav/Header ****/
+  .title {
+    width: 30%;
+  }
+
+  .flex-nav li {
+    padding: 10px 20px;
+
+  }
+
+  .slider {
+    width: 55%;
+  }
+
+  .coupleSlide {
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+
+  /**** Prints Section ****/
+  .main-image {
+    width: 60%;
+  }
+
+  .prints-info {
+    font-size: 1.6em;
+  }
+
+  /**** Gallery Section ****/
+  .gallery-img {
+    width: 20%;
     padding: 5px;
   }
 
   /**** Customs ****/
-  #customs {
-    display: flex;
-    padding-left: 20px;
-  }
-
   .custom-img {
-    width: 50%;
+    width: 10%;
   }
 
   .customs-info {
-    flex-wrap: wrap;
-    width: 50%;
-    font-size: 1em;
-    padding: 10px 20px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .button2 {
-    font-size: 1.2em;
+    font-size: 1.6em;
   }
 
   /**** About Me ****/
-  #about-me {
-    display: flex;
-    padding-left: 20px;
+  .info {
+    font-size: 1.4em;
   }
 
-  .artist-photo {
-    width: 50%;
-  }
-
-  .about-me-info {
-    flex-wrap: wrap;
-    width: 40%;
-    font-size: 1.1em;
-    padding: 30px 20px;
-    ;
+  .span {
+    font-size: 1.5em;
   }
 
   /**** Contact ****/
-  #contact {
-    margin: 30px;
-  }
-
   .contact-info {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
-  #contact .contact-icons ul {
-    margin: 0 20px;
-    justify-content: center;
-  }
-
-  .contact-icons ul li {
-    padding: 0 20px;
-  }
-
-  .email {
-    font-size: 1.5em;
-  }
-
-  /**** Footer ****/
-  h3 {
-    width: 28%;
-    font-size: 1.8em;
-    text-align: left;
-    padding-left: 20px;
-  }
-
-  .fa-brands,
-  .fa-instagram {
-    font-size: 2.5em;
-    padding-top: 10px;
-  }
 
 }
 
-/*** ---------Desktop Styles --------***/
-@media only screen and (min-width: 1200px) {
 
-  /**** Header Section ****/
-  .title {
-    width: 20%;
-  }
 
-  nav {
-    width: 90%;
-  }
-
-  .slider {
-    width: 45%;
-  }
-
-  /*** Image slider ***/
-  /* .slider-container {
-    width: 70vw;
-    height: 75vh;
-    margin: 0 auto;
-    max-width: 80rem;
-  }
-
-  .slide-image {
-    width: 70vw;
-    height: 75vh;
-  } */
-
-  /**** Prints Section ****/
-  .main-image {
-    width: 35%;
-  }
-
-  .prints-info {
-    margin-top: 250px;
-  }
-
-  /**** Gallery Section ****/
-  .gallery-img {
-    width: 23%;
-  }
-
-  /**** Gallery- big images ****/
-  .big-image {
-    padding: 20px;
-  }
-
-  /**** Customs ****/
-  .custom-img {
-    width: 45%;
-  }
-
-  .customs-info {
-    padding-top: 50px;
-  }
-
-  /**** About Me ****/
-  .artist-photo {
-    width: 45%;
-
-  }
-
-  .about-me-info {
-    font-size: 1.5em;
-  }
-
-  /**** Footer ****/
-  h3 {
-    width: 39%;
-    font-size: 2.5em;
-    text-align: left;
-  }
-
-  .fa-brands,
-  .fa-instagram {
-    font-size: 2.5em;
-    padding-top: 25px;
-  }
-
-  .instagram-logo {
-    width: 70%;
-  }
-
-}
 
 /* ==========================================================================
    Helper classes
